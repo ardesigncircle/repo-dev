@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The Best Songs Dev - Ardesign">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, Node, Laravel, Codeigniter">
+    <meta name="author" content="Muhamad Ardiansyah">
+    <link rel="icon" type="image/png" href="logo.png" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>1000+ Songs in World - Ardesign</title>
+    <link rel="stylesheet" href="index.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="cssico/ardesico.css" type="text/css" media="all" />
+    <style type="text/css" media="all">
+        .radius-1{
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="images">
+            <img class="main-images" alt="" />
+        </div>
+        <div class="blur"></div>
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="col-8">
+                <div class="title">
+                    <h1 class="my-1 title"></h1>
+                    <p class="text-secondary name"></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="btnList">
+                    <i class="ar ar-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 text-center">
+            <input type="range" name="" class="w-100 seek_slider" min="1" max="100" value="0" onchange="seekTo()" />
+            <div class="flex">
+                <div class="current-time">
+                    00:00
+                </div>
+                <div class="total-duration right">
+                    00:00
+                </div>
+            </div>
+        </div>
+        <div id='player' class="flex">
+            <audio id="music_player" ></audio>
+            <a href="https://ardesign.eu.org/"/>
+            <button type="image" id="buttona"><i class="ar ar-home"></i></button></a>
+            <button type="image" id="button" onclick="prev()"><i class="ar ar-rewind"></i></button>
+            <button id="play_button">
+                <i class="ar ar-play" onclick="play_aud()"></i>
+            </button>
+            <button id="pause_button">
+                <i class="ar ar-pause" onclick="pause_aud()"></i>
+            </button>
+            <button type="image" id="button" onclick="next()"><i class="ar ar-fast-forward"></i></button>
+            <button type="image" onclick="" id="button"><img width="35" height="35" class="radius-1"/></button>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="script.js">
+</script>
+</body>
+</html>
